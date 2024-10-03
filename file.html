@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather web</title>
+    <link rel="stylesheet" href="page.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Weather Web</h1>
+        <div id="locationInput">
+            <input type="text" id="city" placeholder="Enter a city">
+            <button id="getWeatherBtn">Get Weather</button>
+        </div>
+        <button id="getLocationWeatherBtn">Get Weather from My Location</button>
+
+        <!-- Loader -->
+        <div id="loader" class="loader hidden"></div>
+
+        <!-- Weather Display -->
+        <div id="weatherDisplay" class="weather-display hidden">
+            <h2 id="location"></h2>
+            <img id="weatherIcon" src="" alt="Weather Icon" class="weather-icon">
+            <p id="temperature"></p>
+            <p id="description"></p>
+            <p id="humidity"></p>
+            <p id="wind"></p>
+        </div>
+
+        <!-- Error Display -->
+        <div id="error" class="error hidden">
+            <p>City not found. Please try again!</p>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
